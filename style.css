@@ -1,0 +1,32 @@
+*{
+    font-family: serif;
+}
+
+body{
+    background-color: #353535;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centered { 
+    display: block;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    font-size: 100px;
+}
+
+h2 {
+}
+
+h3 {
+    font-size: 30px;
+    color: #A8A7A7;
+}
+
+p { 
+    color: white;
+}
