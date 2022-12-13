@@ -1,11 +1,12 @@
 var dataAPA = [];
 var dataGIR = [];
 
-var options = {
+var optionsGIR = {
     series: [],
     labels: ['GIR 4', 'GIR 3', 'GIR 2', 'GIR 1'],
     chart: {
         type: 'donut',
+        width : 400
     },
     noData: {
         text: 'Loading...',
@@ -32,20 +33,20 @@ var options = {
     }
 };
 
-var chart = new ApexCharts(document.querySelector("#girGraph"), options);
-chart.render();
+var chartGIR = new ApexCharts(document.querySelector("#girGraph"), optionsGIR);
+chartGIR.render();
 
 const url = "./Data/donnesAPA.json";
 
-const promiseLoadJson = new Promise((resolve, reject) =>{
+const promiseLoadJsonAPA = new Promise((resolve, reject) =>{
     $.getJSON(url, function(data) {
-        dataAPA = data;        
+        dataAPA = data;   
         resolve('load ok');
     });
     
 });
 
-promiseLoadJson.then((resolve) => {
+promiseLoadJsonAPA.then((resolve) => {
     console.log(resolve);
     let nbrGIR4 = 0;
     let nbrGIR3 = 0;
@@ -80,6 +81,6 @@ promiseLoadJson.then((resolve) => {
     dataGIR.push(nbrGIR2);
     dataGIR.push(nbrGIR1);
 
-    chart.updateSeries(dataGIR)
+    chartGIR.updateSeries(dataGIR)
     
 });
