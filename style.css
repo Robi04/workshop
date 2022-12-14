@@ -33,9 +33,16 @@ p {
     color: white;
 }
 
-#map{
-    height: 450px;
-    width: 70vw;
+#map1{
+    height: 550px;
+    width: 60vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#map2{
+    height: 550px;
+    width: 60vw;
     margin-right: auto;
     margin-left: auto;
 }

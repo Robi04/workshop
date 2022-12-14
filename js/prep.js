@@ -1,3 +1,5 @@
+//Projection map 1 
+
 var apaers=[];
 for (var i = 0; i < apa.length; i++) {
     if(!apaers.some(ob => ob.Commune == apa[i].Commune)){
@@ -35,13 +37,28 @@ for (var j = 0; j < apaers.length; j++) {
     apaers[j].percent_apa = Math.round((apaers[j].count_apa/apaers[j].count_tot)*100)/100 * 100
 }
 
+var min = 10000
+var max = 0
+moye = 0
 for (var i = 0; i < geojsonloire.features.length; i++){
     for (var j = 0; j < apaers.length; j++) {
         if (apaers[j].Commune == geojsonloire.features[i].properties.nom.toUpperCase()){
             geojsonloire.features[i].properties.percent_apa = Math.round(apaers[j].percent_apa)
+            geojsonloire.features[i].properties.count_apa = apaers[j].count_apa
         }
     }
     if(geojsonloire.features[i].properties.percent_apa === undefined || isNaN(geojsonloire.features[i].properties.percent_apa)){
         geojsonloire.features[i].properties.percent_apa = 0
     }
+    if(geojsonloire.features[i].properties.count_apa === undefined || isNaN(geojsonloire.features[i].properties.count_apa)){
+        geojsonloire.features[i].properties.count_apa = 0
+    }
+    if (geojsonloire.features[i].properties.count_apa > max){
+        max = geojsonloire.features[i].properties.count_apa
+    }
+    if (geojsonloire.features[i].properties.count_apa < min){
+        min = geojsonloire.features[i].properties.count_apa
+    }
+    moye += geojsonloire.features[i].properties.count_apa
 }
+moye = moye/geojsonloire.features.length
