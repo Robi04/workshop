@@ -14,7 +14,7 @@ var optionsHorizontalDouble = {
     height: 440,
     stacked: true
   },
-  colors: ['#008FFB', '#FF4560'],
+  colors:['#62BBE7', '#FFF172'],
   plotOptions: {
     bar: {
       horizontal: true,

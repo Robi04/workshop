@@ -10,6 +10,7 @@ var optionsProjAge = {
     type: 'bar',
     height: 350
   },
+  colors:['#62BBE7', '#FFF172'],
   title: {
     text: 'Projection des proportions de personnes agées par tranche d\'age dans la Loire',
     style : {

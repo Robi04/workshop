@@ -23,6 +23,7 @@ var optionsProj = {
     },
     
   ],
+  colors:['#FFF172', '#62BBE7', '#FFF172'],
   chart: {
     height: 350,
     type: 'line',

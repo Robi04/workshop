@@ -9,6 +9,11 @@
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./script/projectionGraph.js" defer></script>
+    <script type="text/javascript" src="./script/projectionAgeGraph.js" defer></script>
+    <script type="text/javascript" src="./script/horizontalDoubleGraph.js" defer></script>
     <title>Dataviz Workshop</title>
 </head>
 <body>
@@ -19,13 +24,35 @@
         Les personnes âgées et/ou en situation de handicap dans le besoin ont-elles accès rapidement aux services nécessaires qu’elles méritent ?    
     </h3>
     <h2 class="centered">
-        Un sénior sur 5 à besoin d'aide régulière au quotidien
+        Un sénior sur 5 est aidé régulièrement...
     </h2>
     <p class="centered">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cumque explicabo nesciunt praesentium illo quaerat perferendis magni consequuntur veritatis, quos cupiditate, earum quae nulla inventore culpa rerum ipsa quod! Sed!
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo eveniet delectus omnis enim nesciunt dolor rerum, quibusdam aspernatur et perferendis velit odit consequuntur ad assumenda eaque reprehenderit ex fugiat obcaecati.
     </p>
     <div id="map"></div>
+
+    <h2 class="centered">
+        De plus, comme pour la population mondiale, la population de la Loire est amené à évoluer.
+    </h2>
+    <p class="centered">
+        Voici un projection de la population Ligérienne jusqu'à l'année 2070. Elle est composé de 3 scénarios distinct : le scénario central, le plus suceptible de se produire. Et 2 scénarion haut et bas, représentant des bornes maximum et minimum. Rapidement on voit que la population va légerement augmenter puis redscendre, ce qui nous amène à penser qu'il n'y aura pas de problème vis-à-vis de la proportion de personnes agées.
+    </p>
+    <div id="projGraph"></div>
+    <h2 class="centered">
+        Mais qu'en est-il réelement ? La proportion de personnes agées reste-elle la même malgrès cette évolution ?
+    </h2>
+    <p class="centered">
+        Pour cela nous comparons ci-dessous les proportions de personnes agées par tranche d'âge selon l'année 2018 et les projections de 2070. Et la différence est bien plus claire, à part pour les personnes de 60 à 70 ans, il y a une nette augmentation de la proportion des personnes agées. 
+    </p>
+    <div id="projectionAgeGraph"></div>
+    <h2 class="centered">
+        Pour finir, on se rends bien compte que le problème est de taille, surtout quand on ajoute à ça le temps d'assistance apportées aux personnes dans le besoin.
+    </h2>
+    <p class="centered">
+        En comparant les volumes horaires médians dont ont besoins les différentes personnes suivants leurs GIR. On constate que l'augmentation du nombres de seniors va nécessiter une main d'oeuvre importante.
+    </p>
+    <div id="HorizontalDoubleGraph"></div>
 
     <script src="data/personne_par_tranche_age_loire.js"></script>
     <script src="data/apa.js"></script>
