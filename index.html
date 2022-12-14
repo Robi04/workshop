@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" src="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <title>Dataviz Workshop</title>
 </head>
 <body>
@@ -21,6 +25,13 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cumque explicabo nesciunt praesentium illo quaerat perferendis magni consequuntur veritatis, quos cupiditate, earum quae nulla inventore culpa rerum ipsa quod! Sed!
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo eveniet delectus omnis enim nesciunt dolor rerum, quibusdam aspernatur et perferendis velit odit consequuntur ad assumenda eaque reprehenderit ex fugiat obcaecati.
     </p>
-    
+    <div id="map"></div>
+
+    <script src="data/personne_par_tranche_age_loire.js"></script>
+    <script src="data/apa.js"></script>
+    <script src="data/geojson_loire.js"></script>
+    <script src="js/prep.js"></script>
+    <script src="js/map.js"></script>
+
 </body>
 </html>
