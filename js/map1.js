@@ -1,8 +1,8 @@
-var map = L.map('map').setView([45.739695, 4.1871779], 9);
+var map1 = L.map('map1').setView([45.739695, 4.1871779], 9);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-}).addTo(map);
+}).addTo(map1);
 
 function onEachFeature(feature, layer) {
     let popupContent = `<h4>Commune : <i>${feature.properties.nom}</i></h4>`;
@@ -40,4 +40,4 @@ function style(feature) {
 var loire = L.geoJson(geojsonloire, {
     style: style,
     onEachFeature
-}).addTo(map);
+}).addTo(map1);
