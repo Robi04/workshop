@@ -8,7 +8,8 @@ var optionsProjAge = {
   }],
     chart: {
     type: 'bar',
-    height: 350
+    height: 350,
+    fontFamily: 'GreyCliff'
   },
   colors:['#62BBE7', '#FFF172'],
   title: {

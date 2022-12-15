@@ -6,6 +6,7 @@ var optionsGIR = {
     labels: ['GIR 4', 'GIR 3', 'GIR 2', 'GIR 1'],
     chart: {
         type: 'donut',
+        fontFamily: 'GreyCliff',
         width : 500
     },
     title: {

@@ -27,6 +27,7 @@ var optionsProj = {
   chart: {
     height: 350,
     type: 'line',
+    fontFamily: 'GreyCliff',
     zoom: {
       enabled: false
     },

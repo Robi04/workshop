@@ -12,6 +12,7 @@ var optionsHorizontalDouble = {
   chart: {
     type: 'bar',
     height: 440,
+    fontFamily: 'GreyCliff',
     stacked: true
   },
   colors:['#62BBE7', '#FFF172'],

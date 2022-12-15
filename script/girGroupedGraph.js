@@ -11,6 +11,7 @@ var optionsGirGrouped = {
   }],
     chart: {
     type: 'bar',
+    fontFamily: 'GreyCliff',
     height: 350
   },
   title: {

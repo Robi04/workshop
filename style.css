@@ -1,5 +1,16 @@
+/* Taille et police */
+@font-face {
+    font-family: "GreyCliffItalic";
+    src: url("Fonts/GreycliffCF-RegularOblique.otf") format("opentype")
+}
+@font-face {
+    font-family: "GreyCliff";
+    src: url("Fonts/GreycliffCF-Regular.otf") format("opentype")
+}
+
+
 *{
-    font-family: serif;
+    font-family: GreyCliff;
 }
 
 body{
@@ -29,6 +40,7 @@ h1{
 h2 {
     font-size: 37px;
     color: white;
+    font-family: GreyCliffItalic;
 }
 
 h3 {
