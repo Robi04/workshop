@@ -12,9 +12,10 @@ var optionsHorizontalDouble = {
   chart: {
     type: 'bar',
     height: 440,
+    fontFamily: 'GreyCliff',
     stacked: true
   },
-  colors: ['#008FFB', '#FF4560'],
+  colors:['#62BBE7', '#FFF172'],
   plotOptions: {
     bar: {
       horizontal: true,
@@ -69,7 +70,7 @@ var optionsHorizontalDouble = {
     }
   },
   title: {
-    text: 'Volume médian d’aide hebdomadaire apportée par GIR estimé',
+    text: 'Volume médian d’aide hebdomadaire apporté par GIR estimé',
     style : {
       color: "#FFFFFF"
     }

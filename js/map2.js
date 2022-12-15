@@ -14,12 +14,12 @@ function onEachFeature(feature, layer) {
 }
 
 function getColor2(d) {
-    return d < 5 ? '#800026' :
-    d < 20 ? '#BD0026' :
-    d < 50 ? '#E31A1C' :
-    d < 100 ? '#FC4E2A' :
-    d < 500 ? '#FD8D3C' :
-    d >= 500 ? '#FEB24C' :
+    return d < 5 ? '#57D3F2' :
+    d < 20 ? '#62BBE7' :
+    d < 50 ? '#548BCC' :
+    d < 100 ? '#4660B1' :
+    d < 500 ? '#393C95' :
+    d >= 500 ? '#3A2C78' :
             '#FFFFF'
 }
 
@@ -46,12 +46,12 @@ var legend2 = L.control({ position: "bottomleft" });
 legend2.onAdd = function(map2) {
   var div = L.DomUtil.create("div", "legend");
   div.innerHTML += "<h4>Sénior ayant accès aux aides APA</h4>";
-  div.innerHTML += '<i style="background: #800026"></i><span>0-4</span><br>';
-  div.innerHTML += '<i style="background: #BD0026"></i><span>5-19</span><br>';
-  div.innerHTML += '<i style="background: #E31A1C"></i><span>20-49</span><br>';
-  div.innerHTML += '<i style="background: #FC4E2A"></i><span>50-99</span><br>';
-  div.innerHTML += '<i style="background: #FD8D3C"></i><span>100-499</span><br>';
-  div.innerHTML += '<i style="background: #FEB24C"></i><span>+500</span><br>';
+  div.innerHTML += '<i style="background: #57D3F2"></i><span>0-4</span><br>';
+  div.innerHTML += '<i style="background: #62BBE7"></i><span>5-19</span><br>';
+  div.innerHTML += '<i style="background: #548BCC"></i><span>20-49</span><br>';
+  div.innerHTML += '<i style="background: #4660B1"></i><span>50-99</span><br>';
+  div.innerHTML += '<i style="background: #393C95"></i><span>100-499</span><br>';
+  div.innerHTML += '<i style="background: #3A2C78"></i><span>+500</span><br>';
   return div;
 };
 
