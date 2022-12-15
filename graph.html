@@ -5,20 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" src="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+
+    <!-- IMPORT APEX CHART + JQUERY + LEAFLET -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="./script/girGraph.js" defer></script>
     <script type="text/javascript" src="./script/projectionGraph.js" defer></script>
-    <script type="text/javascript" src="./script/girGroupedGraph.js" defer></script>
-    <script type="text/javascript" src="./script/horizontalDoubleGraph.js" defer></script>
     <script type="text/javascript" src="./script/projectionAgeGraph.js" defer></script>
+    <script type="text/javascript" src="./script/horizontalDoubleGraph.js" defer></script>
     <title>Dataviz Workshop</title>
 </head>
 <body>
-    <div id="girGraph"></div>
-    <div id="projGraph"></div>
-    <div id="GirGroupedGraph"></div>
-    <div id="HorizontalDoubleGraph"></div>
-    <div id="projectionAgeGraph"></div>
+    <div id="home_button">
+       <a href="index.html">RETOUR</a> 
+    </div>
+    <div style="padding-right:100px;padding-left:100px; border-radius: 50px; border: solid 3px white;">
+        <h1 class="centered ">DASHBOARD</h1>
+        <div class="flex-horizontal">
+            <div id="map1" style="width:40vw;height:90vh"></div>
+            <div class="flex-vertical" style="width:40vw">
+                <div id="girGraph" style="height:10vh"></div>
+                <div id="HorizontalDoubleGraph"></div>
+            </div>
+    </div>
+   
+    </div>
+    
+
+    <script src="data/personne_par_tranche_age_loire.js"></script>
+    <script src="data/apa.js"></script>
+    <script src="data/geojson_loire.js"></script>
+    <script src="js/prep.js"></script>
+    <script src="js/map1.js"></script>
+
 </body>
 </html>

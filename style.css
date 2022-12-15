@@ -121,3 +121,18 @@ p{
     text-align: justify;
     text-justify: inter-word;
 }
+
+.flex-horizontal{
+    display: flex;
+    flex-direction: row;
+}
+
+#home_button{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: black;
+    background-color: white;
+    border-radius: 30px;
+    padding: 10px;
+}

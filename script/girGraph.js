@@ -14,6 +14,7 @@ var optionsGIR = {
           color: "#FFFFFF"
         }
       },
+    colors:['#57D3F2', '#548BCC', '#4660B1', '#393C95'],
     noData: {
         text: 'Loading...',
         style: {
