@@ -39,6 +39,7 @@ for (var j = 0; j < apaers.length; j++) {
 
 var min = 10000
 var max = 0
+var count_inf_20 = 0
 moye = 0
 for (var i = 0; i < geojsonloire.features.length; i++){
     for (var j = 0; j < apaers.length; j++) {
@@ -58,6 +59,9 @@ for (var i = 0; i < geojsonloire.features.length; i++){
     }
     if (geojsonloire.features[i].properties.count_apa < min){
         min = geojsonloire.features[i].properties.count_apa
+    }
+    if (geojsonloire.features[i].properties.percent_apa < 21 || isNaN(geojsonloire.features[i].properties.count_apa) || geojsonloire.features[i].properties.count_apa === undefined){
+        count_inf_20 += 1
     }
     moye += geojsonloire.features[i].properties.count_apa
 }

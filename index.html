@@ -7,8 +7,12 @@
     <link rel="stylesheet" href="style.css" src="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+
+    <!-- IMPORT APEX CHART + JQUERY + LEAFLET -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
     <title>Dataviz Workshop</title>
 </head>
 <body>
@@ -19,12 +23,8 @@
         Les personnes âgées et/ou en situation de handicap dans le besoin ont-elles accès rapidement aux services nécessaires qu’elles méritent ?    
     </h3>
     <h2 class="centered">
-        Un sénior sur 5 à besoin d'aide régulière au quotidien
+        Un sénior sur 5 à besoin d'aide au quotidien...
     </h2>
-    <p class="centered">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cumque explicabo nesciunt praesentium illo quaerat perferendis magni consequuntur veritatis, quos cupiditate, earum quae nulla inventore culpa rerum ipsa quod! Sed!
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo eveniet delectus omnis enim nesciunt dolor rerum, quibusdam aspernatur et perferendis velit odit consequuntur ad assumenda eaque reprehenderit ex fugiat obcaecati.
-    </p>
     <div id="map1"></div>
 
     <script src="data/personne_par_tranche_age_loire.js"></script>
@@ -34,9 +34,10 @@
     <script src="js/map1.js"></script>
 
     <p class="centered">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta cumque explicabo nesciunt praesentium illo quaerat perferendis magni consequuntur veritatis, quos cupiditate, earum quae nulla inventore culpa rerum ipsa quod! Sed!
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo eveniet delectus omnis enim nesciunt dolor rerum, quibusdam aspernatur et perferendis velit odit consequuntur ad assumenda eaque reprehenderit ex fugiat obcaecati.
+        En 2015, 3 millions de personnes âgées de 60 ans ou plus vivant à domicile déclarent être aidées régulièrement pour les activités de la vie quotidienne, en raison de leur âge ou d’un problème de santé, d’après l’enquête Capacités, aides et ressources des seniors (CARE) de la DREES qui interroge 15 000 personnes à domicile. Elles reçoivent le plus souvent une aide pour le ménage et les courses.Près de la moitié des seniors aidés le sont uniquement par leur entourage, tandis que 19 % le sont uniquement par des professionnels, le tiers restant recevant une aide mixte, c’est-à-dire à la fois par des aidants professionnels et de l’entourage. Alors que les seniors les plus autonomes sont aidés en majorité uniquement par leur entourage, l’aide mixte devient prépondérante pour les plus dépendants.
     </p>
+
+    <p class="centered">Aussi ce problème devient encore plus impactant quand on sait que, dans les prochaines années, la part de personnes âgées risque fortement d’augmenter. Selon les prévisions de l’INSEE trois scénarios potentiels sont à prévoir. Si l’on prend en considération le scénario central, le scénario le plus susceptible, on pourrait penser que la situation ne constitue pas une situation d’urgence.</p>
 
     <div id="map2"></div>
     <script src="js/map2.js"></script>
