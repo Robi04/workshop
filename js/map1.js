@@ -6,9 +6,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 function onEachFeature(feature, layer) {
     let popupContent = `<h4>Commune : <i>${feature.properties.nom}</i></h4>`;
-    if  (feature.properties.count != null){
-        popupContent += `<h4>Pourcentage des personnes âgées bénéficiant de  l'APA :<i>${feature.properties.percent_apa} %</i></h4>`;
-    }
+    popupContent += `<h4>Pourcentage de personnes âgées bénéficiant de  l'APA :<i>${feature.properties.percent_apa} %</i></h4>`;
     // Object.keys(feature.properties).forEach(key => {
     //     popupContent = popupContent += `<p><b>${key}</b> : ${feature.properties[key]}</p>`
     // });
