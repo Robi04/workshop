@@ -16,13 +16,13 @@ function onEachFeature(feature, layer) {
 }
 
 function getColor1(d) {
-    return d <= 2 ? '#800026' :
-        d < 5 ? '#BD0026' :
-            d < 7 ? '#E31A1C' :
-                d < 10 ? '#FC4E2A' :
-                    d < 15 ? '#FD8D3C' :
-                        d< 20 ? '#FEB24C' :
-                            d <= 80 ? '#FED976' :
+    return d <= 2 ? '#FF4D2C' :
+        d < 5 ? '#FF7737' :
+            d < 7 ? '#FF9C43' :
+                d < 10 ? '#FFBA4F' :
+                    d < 15 ? '#FFD35B' :
+                        d< 20 ? '#FFE566' :
+                            d <= 80 ? '#FFF172' :
                                     '#FFFFF'
 }
 
@@ -48,13 +48,13 @@ var legend1 = L.control({ position: "bottomleft" });
 legend1.onAdd = function(map1) {
   var div = L.DomUtil.create("div", "legend");
   div.innerHTML += "<h4>Séniors ayant accès aux aides APA(%)</h4>";
-  div.innerHTML += '<i style="background: #800026"></i><span>0-2%</span><br>';
-  div.innerHTML += '<i style="background: #BD0026"></i><span>3-5%</span><br>';
-  div.innerHTML += '<i style="background: #E31A1C"></i><span>6-7%</span><br>';
-  div.innerHTML += '<i style="background: #FC4E2A"></i><span>8-9%</span><br>';
-  div.innerHTML += '<i style="background: #FD8D3C"></i><span>10-14%</span><br>';
-  div.innerHTML += '<i style="background: #FEB24C"></i><span>16-19%</span><br>';
-  div.innerHTML += '<i style="background: #FED976"></i><span>+20%</span><br>';
+  div.innerHTML += '<i style="background: #FF4D2C"></i><span>0-2%</span><br>';
+  div.innerHTML += '<i style="background: #FF7737"></i><span>3-5%</span><br>';
+  div.innerHTML += '<i style="background: #FF9C43"></i><span>6-7%</span><br>';
+  div.innerHTML += '<i style="background: #FFBA4F"></i><span>8-9%</span><br>';
+  div.innerHTML += '<i style="background: #FFD35B"></i><span>10-14%</span><br>';
+  div.innerHTML += '<i style="background: #FFE566"></i><span>16-19%</span><br>';
+  div.innerHTML += '<i style="background: #FFF172"></i><span>+20%</span><br>';
   return div;
 };
 

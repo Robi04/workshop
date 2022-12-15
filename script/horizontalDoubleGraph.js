@@ -70,7 +70,7 @@ var optionsHorizontalDouble = {
     }
   },
   title: {
-    text: 'Volume médian d’aide hebdomadaire apportée par GIR estimé',
+    text: 'Volume médian d’aide hebdomadaire apporté par GIR estimé',
     style : {
       color: "#FFFFFF"
     }
