@@ -7,7 +7,6 @@ var optionsGIR = {
     chart: {
         type: 'donut',
         fontFamily: 'GreyCliff',
-        width : 500
     },
     title: {
         text: 'Proportion des différents niveau de GIR dans la Loire',
